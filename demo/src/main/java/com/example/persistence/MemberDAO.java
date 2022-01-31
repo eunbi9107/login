@@ -17,6 +17,6 @@ public interface MemberDAO {
 
     public void deleteMember(MemberVO vo) throws Exception;
 
-    public List<MemberVO> getMemberList(MemberVO vo);
+    public List<MemberVO> getMemberList();
 
 }

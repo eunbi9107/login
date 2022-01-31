@@ -166,7 +166,7 @@ public class MemberController {
         }
 
         // 2. 서비스 - 회원 목록 가져오는 동작
-        List<MemberVO> memberList = service.getMemberList(vo);
+        List<MemberVO> memberList = service.getMemberList();
 
         // 3. 정보 저장 -> 뷰(/memberlist.jsp) -> (Model 객체 )
         model.addAttribute("memberList", memberList);

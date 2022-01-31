@@ -15,5 +15,5 @@ public interface MemberService {
 
     public void deleteMember(MemberVO vo);
 
-    public List<MemberVO> getMemberList(MemberVO vo);
+    public List<MemberVO> getMemberList();
 }

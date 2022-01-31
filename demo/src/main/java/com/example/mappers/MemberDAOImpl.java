@@ -63,10 +63,10 @@ public class MemberDAOImpl implements MemberDAO {
     }
 
     @Override
-    public List<MemberVO> getMemberList(MemberVO vo) {
+    public List<MemberVO> getMemberList() {
         
         List<MemberVO> memberList = null;
-        memberList = sqlSession.selectList(namespace + ".memberList", vo);
+        memberList = sqlSession.selectList(namespace + ".memberList");
         System.out.println("DAO: getMemberList 결과 - " + memberList);
 
         return memberList;
